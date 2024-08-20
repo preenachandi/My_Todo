@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239, 239, 238);
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.tittle {
+    text-align: center;
+    font-size: 32px;
+    color: #7b7d7d;
+    font-weight: 500;
+}
+
+.header-full {
+    box-shadow: 1px 2px 3px -3px grey;
+    border-radius: 18px;
+    background-color: white;
+    margin: 3rem;
+    padding: 18px 14px 14px 14px;
+    min-height: 80vh;
+
+}
+
+.header {
+    flex: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.task-list {
+    margin: 3rem auto;
+
+}
+
+.header button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.task {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    color: white;
+    margin: 15px;
+
+
+}
+
+.task .content {
+    flex: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+.task .content p {
+    display: grid;
+    color: #7b7d7d;
+    width: 100%;
+    font-size: 16px;
+    border-right: none;
+    font-weight: 400;
+
+}
+
+.task .content span {
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+
+.todoLists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #e5e3e3;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+    font-size: 16px;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FFD700;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+}
+
+.submit-btn:hover {
+    background-color: #ebd037;
+}
+
+.svg-icon {
+    fill: #FFD700;
+}
+
+.content {
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.content.marked {
+    border-color: green;
+}
+
+.no-todolist {
+    color: #afb3b3;
+}
+
+.icon img {
+    transition: filter 0.3s ease;
+}
+
+.icon:hover img {
+    filter: invert(50%) sepia(100%) saturate(5000%) hue-rotate(200deg) brightness(100%) contrast(100%);
+}
+
+.marked .icon.mark img {
+    filter: invert(50%) sepia(100%) saturate(5000%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+
+@media (max-width: 768px) {
+    .header-full {
+        margin: 1rem;
+    }
+
+    .task {
+        width: 360px;
+    }
+}
+
+@media (max-width: 540px) {
+    .header-full {
+        margin: 1rem;
+    }
+
+    .task {
+        width: 320px;
+    }
+
+    .input-field {
+        width: 192px;
+    }
+}
